@@ -151,7 +151,7 @@ hr {
     color: var(--hard-black);
 }
 .aux_works~p {
-    font-weight: 600;
+    font-weight:400;
     color: var(--gray);
 }
 
