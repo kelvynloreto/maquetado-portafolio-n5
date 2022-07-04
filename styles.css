@@ -470,6 +470,7 @@ footer img {
        font-size: 16px;
        text-decoration: none;
        color: var(--hard-black);   
+       padding: 5px;
     }
     li a:hover{
         color:  var(--violet);
