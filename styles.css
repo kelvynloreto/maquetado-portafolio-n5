@@ -52,11 +52,13 @@ body {
     background-color: var(--violet);
     gap: 1em;
     color: var(--white);
+    transition:  background-color 0.2s;
 
 }
 .header_text .button:active{
-    background-color: #1c072bf3;
+    filter: brightness(0.7);
 }
+
 
 .button>img {
     width: 15px;
@@ -88,6 +90,9 @@ body {
     border-radius: 100%;
     align-items: center;
     justify-content: center;
+}
+.social_red .bg_sr:active{
+    filter: brightness(0.6);  
 }
 
 .bg_sr img {
@@ -471,7 +476,7 @@ footer img {
        font-size: 16px;
        text-decoration: none;
        color: var(--hard-black);   
-       padding: 5px;
+       padding: 1px;
     }
     li a:hover{
         color:  var(--violet);
@@ -498,7 +503,7 @@ footer img {
         display: flex;
         flex-direction: column;
         margin-top: -5em;
-        z-index: -100;
+        z-index: -1;
 
     }
 
@@ -519,7 +524,7 @@ footer img {
         top: 105%;
         left: 25%;
         width: 40%;
-    
+    z-index: 101;
     }
    
 
@@ -545,6 +550,7 @@ footer img {
 
     .social_red {
         gap: 1.5em;
+        margin-right: 2em;
     }
 
     .experience {
