@@ -54,6 +54,9 @@ body {
     color: var(--white);
 
 }
+.header_text .button:active{
+    background-color: #1c072bf3;
+}
 
 .button>img {
     width: 15px;
@@ -426,44 +429,66 @@ footer img {
 
 /* mobile */
 
+
+
 @media (max-width:1199px) {
-    nav {
-        margin-top: 1em;
+    nav{
         display: flex;
-        align-content: flex-end;
-        justify-content: flex-end;
-
+        justify-content: end;
+        
     }
-
-    nav>img {
-        width: 24px;
-        height: 24px;
-        opacity: 1;
-        cursor: pointer;
-        margin-right: 1em;
+        nav ul {
+            display: flex;
+            flex-direction: column;
+            background-color:rgb(171, 168, 168);
+            border-radius: 10px;
+            top: 40px;
+            width: 40%;
+            left: 60%;
+            padding: 1em 0;
+            position: fixed;
+            align-items: flex-end;
+             opacity: 1;
+            transition: margin-top 0.5s;
+            margin-top: -100%;
+       
+        }
+        .show__menu {
+            margin-top: 0;
+        }
+        .icon__burger-show {
+            display: block; 
+            position: fixed;
+        }
+    
+        li{
+            display: flex;
+        }
+        li>a{
+        margin-right: 2em;
+       font-weight: 500;
+       font-size: 16px;
+       text-decoration: none;
+       color: var(--hard-black);   
     }
-
-
-    nav>ul {
-        opacity: 0;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
+    li a:hover{
+        color:  var(--violet);
     }
-
-    /* li>a{
+    
+    li>a{
         text-decoration: none;
         font-size: 16px;
         font-weight:500;
         color: var(--hard-black);
         cursor: pointer;
     }
-    li>a:hover{
-       color:  var(--violet);
-    } */
-
+    nav img{
+        margin:0.3em;
+    }
+    
     .header {
         padding-left: 1em;
+        top: 100px;
         position: relative;
         width: 100%;
         display: flex;
@@ -489,8 +514,11 @@ footer img {
         top: 105%;
         left: 25%;
         width: 40%;
+    }
+   
 
-
+    .header_descrption{
+      width: 50%;
     }
 
     .photo_redes {
@@ -515,7 +543,7 @@ footer img {
 
     .experience {
         padding-left: 1em;
-        margin-top: 7em;
+        margin-top: 12em;
         display: flex;
         flex-direction: column;
 
