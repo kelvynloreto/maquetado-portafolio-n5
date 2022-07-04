@@ -145,10 +145,13 @@ hr {
     margin-bottom: 0.2em;
 }
 
-.aux_works,
-.aux_works~p {
+.aux_works{
     font-weight: 600;
     color: var(--hard-black);
+}
+.aux_works~p {
+    font-weight: 600;
+    color: var(--gray);
 }
 
 .skills_logos .logo {
