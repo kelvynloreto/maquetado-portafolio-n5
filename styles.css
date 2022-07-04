@@ -97,6 +97,7 @@ body {
     background-color: var(--yellow);
     width: 100%;
     padding-top: 2em;
+  
 }
 
 .sub_tilte {
@@ -249,13 +250,9 @@ footer img {
 
 /* desktop */
 @media(min-width:1200px) {
-
-
-
     nav>img {
         opacity: 0;
     }
-
     nav>ul {
         margin-top: 2em;
         margin-right: 2em;
@@ -289,7 +286,7 @@ footer img {
         display: flex;
         margin: 3em;
         gap: 5em;
-        width: 1230px;
+       width: 1230px;
 
     }
 
