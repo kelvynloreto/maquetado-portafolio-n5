@@ -448,16 +448,17 @@ footer img {
             padding: 1em 0;
             position: fixed;
             align-items: flex-end;
-             opacity: 1;
+            opacity: 1;
             transition: margin-top 0.5s;
             margin-top: -100%;
+            z-index: 100;
        
         }
         .show__menu {
             margin-top: 0;
         }
         .icon__burger-show {
-            display: block; 
+            display: inline-block; 
             position: fixed;
         }
     
@@ -484,7 +485,9 @@ footer img {
         cursor: pointer;
     }
     nav img{
+        
         margin:0.3em;
+        z-index: 2;
     }
     
     .header {
@@ -495,6 +498,7 @@ footer img {
         display: flex;
         flex-direction: column;
         margin-top: -5em;
+        z-index: -100;
 
     }
 
@@ -515,6 +519,7 @@ footer img {
         top: 105%;
         left: 25%;
         width: 40%;
+    
     }
    
 
