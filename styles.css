@@ -177,7 +177,8 @@ hr {
 
 .logo p {
     font-weight: 600;
-    color: var(--hard-black)
+    color: var(--hard-black);
+    text-align: center;
 }
 
 .briefcase_imgs>div {
