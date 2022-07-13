@@ -25,13 +25,45 @@ body {
     overflow-x:hidden;
     width: 100vw;
 }
+body.darkmode{
+    background-color:black;
+}
+
+body.darkmode .dm {
+    color: var(--white);
+}
 
 /* elemenos globales */
+
+.icons_dm{
+    display: flex;
+    position: absolute;
+    right: 60%;
+    cursor: pointer;
+    right: 7%;
+    width: 30px;
+    background-color: var(--violet);
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+ }
+ body.darkmode .icons_dm{
+    background-color: var(--white);
+ }
+ .moon{
+    display: none;
+ }
+ body.darkmode .sun{
+ display: none;
+ }
+ body.darkmode .moon{
+    display: block;
+ }
+
 .header .header_text {
     display: flex;
     flex-direction: column;
     width: 50%;
-
 }
 
 .header_text .header_tilte {
@@ -53,12 +85,10 @@ body {
     gap: 1em;
     color: var(--white);
     transition:  background-color 0.2s;
-
 }
 .header_text .button:active{
     filter: brightness(0.7);
 }
-
 
 .button>img {
     width: 15px;
@@ -77,6 +107,7 @@ body {
     font-weight: 400;
     color: var(--gray)
 }
+
 
 .social_red {
     display: flex;
@@ -259,34 +290,54 @@ footer img {
 
 /* desktop */
 @media(min-width:1200px) {
-    
-   
-    nav>ul {
-        margin-top: 2em;
-        margin-right: 2em;
-        display: flex;
-        gap: 2em;
+    nav{
+        margin-top: 10px;
+    }
+    .auxNav {
+        background-color: rgb(144, 131, 131);
+        position: fixed;
+        height: 70px;
+        min-width:100vw  ;
+        top: 0%;
+        filter: drop-shadow(0 5px 0 var(--violet));
+
+      }
+
+      .container_nav {
+       display: flex;
+        gap: 1.5em;
         list-style: none;
-        font-size: 18px;
+        font-size: 25px;
         font-weight: 600;
-        letter-spacing: 0;
-        color: var(--hard-black);
         transition: color 0.5s;
-        justify-content: flex-end;
+        justify-content: flex-start;
         cursor: pointer;
+         z-index: 600;
+         align-items: center;
+        
     }
 
+
+    .icons_dm{
+       display: grid;
+    }
     li>a:hover {
         color: var(--violet)
     }
 
     ul>li:hover {
         color: var(--violet);
+        
     }
 
     li>a {
         text-decoration: none;
         color: var(--hard-black);
+        padding-left: 30px;
+        
+    }
+    body.darkmode li>a{
+        color: var(--white);  
     }
 .icon__lines{
     opacity: 0;
@@ -465,6 +516,12 @@ footer img {
             z-index: 100;
        
         }
+        
+.icons_dm{
+    position: absolute;
+    right: 60%;
+    
+ }
         .show__menu {
             margin-top: 0;
         }
