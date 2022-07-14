@@ -24,13 +24,16 @@ body {
     justify-content: center;
     overflow-x:hidden;
     width: 100vw;
+    transition:background-color 1s ;
 }
 body.darkmode{
     background-color:black;
+    transition:background-color 1s;
 }
 
 body.darkmode .dm {
     color: var(--white);
+    transition: color 1s;
 }
 
 /* elemenos globales */
